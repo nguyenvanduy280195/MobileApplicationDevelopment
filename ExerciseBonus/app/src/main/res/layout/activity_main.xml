@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lazyguy.exercisebonus.MainActivity">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/spinner"
+        android:dropDownWidth="match_parent"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/etUSD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvVND"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VND"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/etUSD"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etVND"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvVND"
+        android:layout_alignParentStart="true"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="change"
+        android:layout_below="@+id/etVND"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+
+</RelativeLayout>
